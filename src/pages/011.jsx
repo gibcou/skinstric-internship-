@@ -34,10 +34,7 @@ const AIAnalysis = () => {
           <div className="absolute inset-0 border-2 border-dotted border-gray-300 rotate-45 opacity-30"></div>
           
           {/* Top Diamond - Demographics */}
-          <Link 
-            to="/demographics"
-            className="absolute top-4 left-1/2 transform -translate-x-1/2 w-32 h-32 bg-gray-400 rotate-45 flex items-center justify-center shadow-sm hover:bg-gray-500 transition-colors cursor-pointer group"
-          >
+          <Link to="/demographics" className="absolute top-4 left-1/2 transform -translate-x-1/2 w-32 h-32 bg-gray-400 rotate-45 flex items-center justify-center shadow-sm hover:bg-gray-500 transition-colors cursor-pointer group">
             <div className="transform -rotate-45 text-center">
               <div className="text-sm font-bold text-black">
                 DEMOGRAPHICS

@@ -139,7 +139,7 @@ const Camera = () => {
       // Make the image available to /prepanalysis
       sessionStorage.setItem("uploadedImageDataUrl", photoDataUrl);
 
-      // Route to pre-analysis; that page will handle 3s wait + OK + /demographics
+      // Route to pre-analysis; that page will handle 3s wait + OK + /aianalysis
       navigate("/prepanalysis", { state: { previewImage: photoDataUrl } });
     } catch (e) {
       console.error(e);

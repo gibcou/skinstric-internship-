@@ -5,7 +5,6 @@ import Name from "./pages/002";
 import Image from "./pages/005";
 import PrepAnalysis from "./pages/007";
 import AIAnalysis from "./pages/011";
-import Demographics from "./pages/012";
 import Results from "./pages/013";
 import InfoLoading from "./pages/014";
 import City from "./pages/504";
@@ -29,8 +28,8 @@ function App() {
                 <Route path="/camera" element={<Camera />} />
                 <Route path="/prepanalysis" element={<PrepAnalysis />} />
                 <Route path="/aianalysis" element={<AIAnalysis />} />
-                <Route path="/demographics" element={<Demographics />} />
                 <Route path="/results" element={<Results />} />
+                <Route path="/demographics" element={<Results />} />
             </Routes>
         </Router>
     );
