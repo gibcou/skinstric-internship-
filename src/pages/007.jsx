@@ -35,11 +35,11 @@ const PrepAnalysis = () => {
     setImgSrc(fromState || fromSession || fromLocal || null);
   }, [location.state]);
 
-  // After 3s, notify + go to /demographics
+  // After 3s, notify + go to /aianalysis
   useEffect(() => {
     const t = setTimeout(() => {
       window.alert("Your image has been successfully analyzed.");
-      navigate("/demographics");
+      navigate("/aianalysis");
     }, 3000);
     return () => clearTimeout(t);
   }, [navigate]);
