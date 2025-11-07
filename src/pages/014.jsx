@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import LeftBracket from "../assets/Rectangle 2710.webp"
 import RightBracket from "../assets/Rectangle 2711.webp"
@@ -13,7 +13,7 @@ const InfoLoading = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
         setTimeout(() => navigate("/infoloaded"), 3000)
-    }, []);
+    }, [navigate]);
 
     return (
         <div className="main__intro__page">

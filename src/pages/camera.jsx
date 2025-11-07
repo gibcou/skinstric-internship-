@@ -187,7 +187,7 @@ const Camera = () => {
                 className="transform hover:scale-105 ease-in-out duration-300 focus:outline-none"
               >
                 <img
-                  alt="Take Picture"
+                  alt=""
                   loading="lazy"
                   width={60}
                   height={60}

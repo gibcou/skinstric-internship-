@@ -133,7 +133,7 @@ export default function Image() {
             {/* overlay content */}
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center">
               <img
-                alt="CameraIcon"
+                alt="Open camera"
                 className="z-20 w-[100px] h-[100px] md:w-[136px] md:h-[136px] hover:scale-108 duration-700 ease-in-out cursor-pointer"
                 src={CameraIcon}
                 onClick={() => setCameraPopUp(true)}
@@ -144,7 +144,7 @@ export default function Image() {
                 </p>
               </div>
               <img
-                alt="Scan Line"
+                alt="Scan line"
                 className="absolute z-20 hidden w-[66px] h-[59px] md:block md:right-[128px] md:top-[150px]"
                 src={ResScanLine}
               />
@@ -159,7 +159,7 @@ export default function Image() {
             <img alt="DiamondSmall" className="absolute z-0 w-[190px] h-[190px] md:w-[405.18px] md:h-[405.18px] animate-spin-slowest" src={SquareSmall} />
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center">
               <img
-                alt="Photo Upload Icon"
+                alt="Open gallery"
                 className="absolute z-20 w-[100px] h-[100px] md:w-[136px] md:h-[136px] hover:scale-108 duration-700 ease-in-out cursor-pointer"
                 src={GalleryIcon}
                 onClick={SelectImages}
@@ -169,7 +169,7 @@ export default function Image() {
                   ALLOW A.I. <br /> ACCESS GALLERY
                 </p>
                 <img
-                  alt="GalleryLine"
+                  alt="Gallery line"
                   className="absolute z-20 hidden w-[66.33px] h-[59.37px] md:block md:left-[120px] md:bottom-[39px]"
                   src={ResGalleryLine}
                 />

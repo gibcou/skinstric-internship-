@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import LeftBracket from "../assets/Rectangle 2710.webp"
 import RightBracket from "../assets/Rectangle 2711.webp"
