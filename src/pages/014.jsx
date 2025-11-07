@@ -24,7 +24,7 @@ const InfoLoading = () => {
                     <p className="navbar__left--page-name">INTRO</p>
                     <img className="navbar__left--img" src={RightBracket} alt="" />
                 </div>
-                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-colors  disabled:pointer-events-none text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 mx-4 scale-[0.8] text-[#FCFCFC] text-[10px] bg-[#1A1B1C] leading-[16px]">ENTER CODE</button>
+                <button onClick={() => navigate('/name')} className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-colors  disabled:pointer-events-none text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 mx-4 scale-[0.8] text-[#FCFCFC] text-[10px] bg-[#1A1B1C] leading-[16px]">ENTER CODE</button>
             </div>
             <div className="min-h-[90vh] flex flex-col items-center justify-center bg-white text-center">
                 <div className="absolute top-16 left-9 text-left">

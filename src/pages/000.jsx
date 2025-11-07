@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import LeftBracket from "../assets/Rectangle 2710.webp";
 import RightBracket from "../assets/Rectangle 2711.webp";
 
 const Intro = () => {
+    const navigate = useNavigate();
     const [isHovering, setIsHovering] = useState(false);
     const [issHovering, setIssHovering] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
@@ -23,7 +24,7 @@ const Intro = () => {
             <p className="navbar__left--page-name">INTRO</p>
             <img className="navbar__left--img" src={RightBracket} alt="" />
           </div>
-          <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-colors disabled:pointer-events-none text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 mx-4 scale-[0.8] text-[#FCFCFC] text-[10px] bg-[#1A1B1C] leading-[16px]">
+          <button onClick={() => navigate('/name')} className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-colors disabled:pointer-events-none text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 mx-4 scale-[0.8] text-[#FCFCFC] text-[10px] bg-[#1A1B1C] leading-[16px]">
             ENTER CODE
           </button>
         </div>
@@ -78,7 +79,7 @@ const Intro = () => {
             {/* Mobile CTA */}
             <div className="z-10 mt-4 lg:hidden">
               <div>
-                <button className="relative flex items-center gap-4 hover:scale-105 duration-300">
+                <button onClick={() => navigate('/name')} className="relative flex items-center gap-4 hover:scale-105 duration-300">
                   <span className="text-[12px] font-bold cursor-pointer">ENTER EXPERIENCE</span>
                   <div className="w-[24px] h-[24px] border border-solid border-black rotate-45 cursor-pointer"></div>
                   <span className="absolute left-[129px] scale-[0.5] hover:scale-60 duration-300">
